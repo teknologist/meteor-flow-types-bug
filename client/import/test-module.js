@@ -1,7 +1,7 @@
 //@flow
-import type { TestType } from './import/types';
+import type { TestType } from './types';
 
-export const test = () => {
-  const testTypeVar: TestType = 'Hello World!';
-  return testTypeVar;
+export const test = (): string => {
+  const testTypeVar: TestType = { item: 'Hello World!' };
+  return testTypeVar.item;
 };
